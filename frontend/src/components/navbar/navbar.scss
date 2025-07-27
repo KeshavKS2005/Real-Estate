@@ -1,0 +1,123 @@
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: large;
+    font-weight: bolder;
+    color: #333;
+    text-decoration: none;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  a {
+    transition: all 0.3s ease;
+    color: #555;
+    text-decoration: none;
+
+    &:hover {
+      color: #fece51;
+      transform: translateY(-2px);
+    }
+  }
+
+  .left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: white;
+    height: 100%;
+    gap: 20px;
+    padding-right: 20px;
+
+    a {
+      padding: 10px 18px;
+      margin: 0;
+      border-radius: 5px;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      gap: 15px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #fece51;
+        cursor: pointer;
+      }
+
+      span {
+        color: #333;
+      }
+
+      .profile {
+        padding: 10px 20px;
+        background-color: #fece51;
+        color: white;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+          background-color: darken(#fece51, 10%);
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .notification {
+          position: absolute;
+          top: -6px;
+          right: -6px;
+          background-color: red;
+          color: white;
+          border-radius: 50%;
+          width: 22px;
+          height: 22px;
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .register {
+      background-color: #fece51;
+      color: white;
+      font-weight: 500;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: darken(#fece51, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
